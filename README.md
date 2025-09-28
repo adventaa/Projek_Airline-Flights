@@ -17,14 +17,16 @@ Tujuan utamanya adalah untuk memahami pola antar maskapai serta membantu maskapa
 ---
 # 🗹 Step
 Menerapkan Knowledge Discovery in Databases (KDD) methodology:
-- Data Cleaning
+- Data Cleaning (cek missing value, duplicate data)
 - Data Integration
 - Data Selection
-- Data Transformation
+- Data Transformation (encode data, transformation data)
 - Data Mining
 - Pattern Evaluation
 - Knowledge Presentation
 ---
+# ✔️ Hasil
+- Menggunakan Elbow Method untuk  menentukan jumlah klaster (K) yang optimal sebelum melakukan pemodelan. Hasilnya terlihat titik elbow atau tekukan berada pada k=3. Setelah k=3 terjadi penurunan nilai inertia mulai melambat, yang menandakan bahwa penambahan jumlah klaster setelah titik tersebut hanya memberikan sedikit peningkatan (tidak efisien).
 # 📌 Kesimpulan
 - Cluster 0 adalah penumpang dengan tiket keberangkatan menggunakan kelas ekonomi, dengan mayoritas rute memiliki 1 pemberhentian. Umumnya membeli tiket lebih awal dengan keberangkatan pada dini hari (early morning) dan tiba di kota tujuan pada malam hari. Harga tiket pada cluster ini dimulai dari harga yang paling murah dengan rata-rata durasi perjalanan terpendek dibandingan dengan cluster lainnya. Kota asal terbanyak berasal dari Banglore dan kota tujuan paling dominan yaitu Mumbai. Cluster ini menggambarkan penumpang yang sangat memperhatikan harga tiket, merencanakan perjalanan jauh-jauh hari, dan memilih keberangkatan lebih awal untuk sampai di kota tujuan.
 - Cluster 1  adalah penumpang dengan tiket keberangkatan menggunakan kelas bisnis, dengan mayoritas keberangkatan di pagi hari dan sampai di kota tujuan pada malam hari. Mereka membayar tiket dengan harga tinggi dibandingkan dengan cluster lain dan memiliki rata-rata durasi perjalanan sedang. Rute yang dilalui mayoritas berada di kota-kota besar, seperti Mumbai, Delhi, dan Banglore. Cluster ini menggambarkan pelanggan dengan kelas atas atau bekerja sebagai pebisnis yang memprioritaskan kenyamanan, fleksibilitas waktu, dan efisien dalam berpergian, yang dibuktikan dari kelas tiket adalah kelas bisnis, harga tiket paling tinggi, hanya menggunakan maskapai yang memiliki kelas bisnis.
